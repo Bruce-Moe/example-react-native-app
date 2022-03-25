@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from "react"
-import { LogBox, FlatList, StyleSheet, SafeAreaView } from "react-native"
+import { FlatList, StyleSheet, SafeAreaView } from "react-native"
 import Card from "../components/Card"
 import { getPosts } from "../misc/Firebase"
 
 function Feed ({ navigation }) {
 
-    LogBox.ignoreLogs(["Setting a timer"])
     const [ posts, setPosts ] = useState([])
 
     const fetchPosts = async () => {
@@ -25,7 +24,6 @@ function Feed ({ navigation }) {
 
     useEffect(() => {
         fetchPosts()
-        console.log("mounting")
         const tid = setTimeout(fetchPosts, 45000)
         return () => clearTimeout(tid)
     }, [])

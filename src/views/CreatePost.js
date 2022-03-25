@@ -28,6 +28,7 @@ function CreatePost () {
             const blob = await response.blob()
             // Do something with this
             const mimetype = getMimetype(fname.split(".").pop())
+            console.log(mimetype)
             if (mimetype) {
                 // Save in state
                 setImage({

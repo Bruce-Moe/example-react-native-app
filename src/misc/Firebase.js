@@ -4,13 +4,12 @@ let app
 if (!firebase.apps.length) {
     // app not loaded yet
     app = firebase.initializeApp({
-        apiKey: "AIzaSyCfHJcu3a2S7vCOgaG85BlVE_ie0JiNy6k",
-        authDomain: "test-project-48404.firebaseapp.com",
-        databaseURL: "https://test-project-48404.firebaseio.com",
-        projectId: "test-project-48404",
-        storageBucket: "test-project-48404.appspot.com",
-        messagingSenderId: "849718722129",
-        appId: "1:849718722129:web:9c9e0d856a4f4d4cd44270"
+        apiKey: "AIzaSyD3ccrvkNr7zJigd-YMCZ93W-1qDp_ekfc",
+        authDomain: "simple-blog-aec83.firebaseapp.com",
+        projectId: "simple-blog-aec83",
+        storageBucket: "simple-blog-aec83.appspot.com",
+        messagingSenderId: "98172529920",
+        appId: "1:98172529920:web:e6223340a148acf44a57e5"
     })
 }
 
